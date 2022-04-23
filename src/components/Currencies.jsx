@@ -33,20 +33,20 @@ const Currencies = () => {
 
   return (
     <div>
-      <h1>Currencies</h1>
+      <h1 class="h1">Currencies</h1>
 
       <form onSubmit={calculateTotal}>
-        <input type="text" name="amount" placeholder="amount" />
-        <select name="currency">
+        <input class="input" type="text" name="amount" placeholder="amount" />
+        <select class="currency" name="currency">
           <option value="">choose currency</option>
           <option value="USD">USD</option>
           <option value="EUR">EUR</option>
           <option value="CHF">CHF</option>
         </select>
-        <button>Calculate</button>
+        <button class="btn">Calculate</button>
       </form>
 
-      <span>{total}</span>
+      <span class="total ">{total}</span>
     </div>
   );
 };

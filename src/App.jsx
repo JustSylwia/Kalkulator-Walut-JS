@@ -1,4 +1,5 @@
 import Currencies from "./components/Currencies";
+import "./App.css";
 
 function App() {
   return (
