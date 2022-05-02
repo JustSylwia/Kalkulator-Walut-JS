@@ -5,7 +5,7 @@ const Currencies = () => {
   const [total, setTotal] = useState(0);
 
   useEffect(() => {
-    fetch("http://api.nbp.pl/api/exchangerates/tables/a?format=json")
+    fetch("https://api.nbp.pl/api/exchangerates/tables/a?format=json")
       .then((resp) => resp.json())
       .then((data) => {
         console.log(data[0].rates);
